@@ -14,10 +14,7 @@ spec:
     spec:
       containers:
       - name: helloworld-gke
-        # Replace $LOCATION with your Artifact Registry location (e.g., us-west1).
-        # Replace $GCLOUD_PROJECT with your project ID.
-        image: $LOCATION-docker.pkg.dev/$GCLOUD_PROJECT/hello-repo/helloworld-gke:latest
-        # This app listens on port 8080 for web traffic by default.
+        image: us-west1-docker.pkg.dev/helloworld-gke/helloworld-gke/helloworld-gke:latest
         ports:
         - containerPort: 8080
         env:
